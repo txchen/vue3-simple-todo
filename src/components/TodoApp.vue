@@ -15,9 +15,9 @@
           <label :for="todo.id"></label>
         </div>
         <div class="labelContent">
-          <strike class="todoLabel" v-if="todo.completed">
+          <del class="todoLabel" v-if="todo.completed">
             <div>{{ todo.title }}</div>
-          </strike>
+          </del>
           <div v-else>{{ todo.title }}</div>
         </div>
         <button @click="handleTodoDelete(todo)" class="closeBtn">x</button>
